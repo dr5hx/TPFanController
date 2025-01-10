@@ -592,7 +592,7 @@ FANCONTROL::WorkThread()
 								CCurrentMode, MaxTemp, SensorName, CCurrentICON, fanspeed, fanstate);
 							this->Trace(str_value);
 							strcpy_s(Title2,sizeof(Title2), "");
-							sprintf_s(this->Title2, sizeof(this->Title2), "%d° Fan %d (%s) %d rpm ",
+							sprintf_s(this->Title2, sizeof(this->Title2), "%d?Fan %d (%s) %d rpm ",
 								this->MaxTemp, fanstate, CCurrentMode, fanspeed);
 						}
 					}
