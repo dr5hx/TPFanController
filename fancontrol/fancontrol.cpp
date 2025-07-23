@@ -891,10 +891,10 @@ FANCONTROL::DlgProc(HWND
 		case 2:        // update window title
 
 		// skip ManMode?
-			if (this->CurrentMode == 3 && this->MaxTemp > this->ManModeExit2) {
+		/*	if (this->CurrentMode == 3 && this->MaxTemp > this->ManModeExit2) {
 				this->ModeToDialog(2);
 				::PostMessage(this->hwndDialog, WM__GETDATA, 0, 0);
-			}
+			}*/
 
 			res = this->IsMinimized();
 			if (

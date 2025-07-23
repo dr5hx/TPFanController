@@ -77,7 +77,7 @@ FANCONTROL::HandleData(void)
 		}
 	}
 
-	this->MaxTemp = maxtemp;
+	this->MaxTemp = maxtemp+10;
 	this->iMaxTemp = imaxtemp;
 
 
@@ -300,7 +300,7 @@ FANCONTROL::HandleData(void)
 	}
 
 	this->PreviousMode = this->CurrentMode;
-	if (this->CurrentMode == 3 && this->MaxTemp > 75) this->CurrentMode = 2; //hello
+	if (this->CurrentMode == 3 && this->MaxTemp > 100) this->CurrentMode = 2; //hello
 
 	return ok;
 }
